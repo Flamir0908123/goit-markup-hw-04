@@ -343,3 +343,6 @@ ul {
   display: flex;
   align-items: center;
 }
+.last_link {
+  margin: 0;
+}
