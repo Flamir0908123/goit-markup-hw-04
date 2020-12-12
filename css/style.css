@@ -429,7 +429,7 @@ ul {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  margin-right: 30px;
+
   fill: #afb1b8;
 }
 .icon_client {
@@ -530,4 +530,11 @@ ul {
 }
 .about_list_item:not(:last-child) {
   margin-right: 30px;
+}
+.client_item:not(:last-child) {
+  margin-right: 30px;
+}
+.icon_client:hover,
+.icon_client:focus {
+  fill: #2196f3;
 }
