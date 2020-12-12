@@ -324,3 +324,12 @@ ul {
 .photo_item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+.nav_btn:hover,
+.nav_btn:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.social-icons:hover,
+.social-icons:focus {
+  background-color: #2196f3;
+}
