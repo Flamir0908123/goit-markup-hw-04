@@ -6,12 +6,17 @@ h5,
 h6 {
   margin: 0;
 }
+img {
+  display: block;
+}
 
 ol,
 ul {
   margin: 0;
 }
-
+* {
+  box-sizing: border-box;
+}
 p {
   margin: 0;
 }
@@ -103,7 +108,7 @@ ul {
   display: flex;
   align-items: center;
 }
-.menu_link_list {
+.menu_item:not(:last-child) {
   margin-right: 50px;
 }
 .icon_head {
@@ -120,7 +125,7 @@ ul {
   margin-top: 24px;
   margin-bottom: 25px;
 }
-.address_link {
+.address_link:not(:last-child) {
   margin-right: 50px;
 }
 .accent {
@@ -131,7 +136,7 @@ ul {
 }
 .nav_portfoil {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .nav_btn {
@@ -148,7 +153,7 @@ ul {
   border-radius: 4px;
   cursor: pointer;
 }
-.nav_portfoil_items {
+.nav_portfoil_items:not(:last-child) {
   margin-right: 8px;
 }
 .photo_list {
@@ -160,7 +165,7 @@ ul {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  margin-right: 30px;
+
   margin-bottom: 30px;
 }
 .photo_head {
@@ -232,92 +237,6 @@ ul {
 .color_footer {
   color: rgba(255, 255, 255, 0.6);
 }
-.last_link {
-  margin: 0;
-}
-.social-icons:hover,
-.social-icons:focus {
-  background-color: #2196f3;
-}
-.social-icons {
-  background-color: #2196f3;
-}
-.contact_footer {
-  min-width: 231px;
-  margin-right: 70px;
-}
-.footer > .conteiner {
-  display: flex;
-  align-items: baseline;
-}
-.ft-icons-title {
-  font-family: "Roboto", sans-serif;
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: white;
-}
-.ft-icons {
-  justify-content: start;
-}
-.social-icons-wr:not(:last-child) {
-  margin-right: 10px;
-}
-.ft-icons .social-icons {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-}
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: #afb1b8;
-}
-.icon_footer {
-  display: inline-block;
-  color: #ffffff;
-}
-.footer_container {
-  display: flex;
-}
-.ft-icons {
-  display: flex;
-}
-.social-links {
-  padding-top: 12px;
-}
-.social-icon {
-  height: 20px;
-  width: 20px;
-  fill: white;
-}
-
-.envelop {
-  fill: #757575;
-  margin-right: 10px;
-}
-.address_link:hover .envelop {
-  fill: #2196f3;
-}
-.address_link:hover .phone {
-  fill: #2196f3;
-}
-.phone {
-  fill: #757575;
-  margin-right: 10px;
-}
-.photo_item:hover,
-.photo_item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .photo_item:nth-child(3n) {
   margin-right: 0;
 }
@@ -329,7 +248,92 @@ ul {
   background-color: #2196f3;
   color: #ffffff;
 }
-.social-icons:hover,
-.social-icons:focus {
+.titel_footer {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.social_footer {
+  justify-content: flex-start;
+  width: 206px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer_container {
+  display: flex;
+}
+.footer_svg {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer_svg:hover,
+.footer_svg:focus {
+  background: #2196f3;
+}
+.footer_item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer_social {
+  margin-left: 70px;
+}
+.footer_svg {
+  display: flex;
+}
+.footer_list {
+  display: flex;
+}
+.social {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  margin-top: 16px;
+}
+.link_list {
+  fill: #afb1b8;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+}
+.link_btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link_btn:hover,
+.link_btn:focus {
   background-color: #2196f3;
+  fill: #ffffff;
+}
+.link-mail {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.link-phone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.nav-contacts .link:focus,
+.nav-contacts .link:hover {
+  color: #2196f3;
+  fill: #2196f3;
+}
+.photo_item:focus,
+.photo_item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
