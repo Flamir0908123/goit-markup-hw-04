@@ -264,6 +264,7 @@ ul {
   width: 206px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 12px;
 }
 .footer_container {
   display: flex;
