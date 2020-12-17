@@ -146,6 +146,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .hero_title {
   font-family: "Roboto", sans-serif;
