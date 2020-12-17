@@ -450,8 +450,7 @@ ul {
   fill: #ffffff;
   background: rgba(255, 255, 255, 0.1);
 }
-.footer_svg:hover,
-.footer_svg:focus {
+.footer_svg:hover {
   background: #2196f3;
 }
 .footer_item:not(:last-child) {
@@ -465,4 +464,7 @@ ul {
 }
 .footer_list {
   display: flex;
+}
+.footer_svg:focus {
+  background: #2196f3;
 }
