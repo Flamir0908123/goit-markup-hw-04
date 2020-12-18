@@ -93,7 +93,8 @@ ul {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-
+  display: flex;
+  align-items: center;
   color: rgba(117, 117, 117, 1);
 }
 .address_item:hover,
@@ -271,6 +272,7 @@ ul {
 }
 .footer_container {
   display: flex;
+  align-items: baseline;
 }
 .footer_svg {
   border-radius: 50%;
